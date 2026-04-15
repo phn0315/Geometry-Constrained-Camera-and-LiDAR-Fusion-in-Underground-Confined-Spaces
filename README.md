@@ -72,3 +72,34 @@ The camera and LiDAR point clouds must already be registered into a common coord
 - Provide at least one small public sample dataset.
 - Add a citation section if the code corresponds to a paper.
 - Include a version tag when publishing on GitHub or Zenodo.
+
+## Dataset
+
+The point cloud datasets associated with this work include:
+
+real tunnel point clouds
+low-light scenes
+strong-light scenes
+dust-fog interference scenes
+
+The dataset contains both before-processing and after-processing point clouds, including intermediate results and final denoised outputs.
+
+More complete datasets can be found in the files submitted to IEEE DataPort. The corresponding link is provided in the paper.
+
+Dataset DOI: 
+    10.21227/7ba7-tv69 
+Dataset URL: (https://ieee-dataport.org/documents/geometry-constrained-camera-and-lidar-fusion-underground-confined-spaces-1)
+
+## Notes
+The input point clouds must already be aligned in a common coordinate system.
+This repository currently provides offline file-based processing, not real-time ROS topic subscription.
+The current implementation uses a straight LiDAR centerline model.
+For robust matching, reasonable registration quality and overlap between the two modalities are recommended.
+
+## Contact
+
+Hongtao Yang
+School of Mechatronics Engineering
+Anhui University of Science and Technology
+Huainan 232001, China
+Email: lloid@163.com
