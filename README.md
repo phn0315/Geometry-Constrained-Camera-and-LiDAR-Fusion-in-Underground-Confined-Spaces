@@ -161,7 +161,7 @@ Example section:
 |----------|------------------|--------------|
 | ![](docs/raw.png) | ![](docs/unfolded.png) | ![](docs/final.png) |
 
-Dataset
+##Dataset
 
 The point cloud datasets associated with this work include:
 
@@ -174,29 +174,24 @@ The dataset contains both before-processing and after-processing point clouds, i
 
 More complete datasets can be found in the files submitted to IEEE DataPort. The corresponding link is provided in the paper.
 
-Dataset DOI: to be added
-Dataset URL: to be added
+Dataset DOI: 10.21227/7ba7-tv69
+Dataset URL: https://ieee-dataport.org/documents/geometry-constrained-camera-and-lidar-fusion-underground-confined-spaces-1
 
-Notes
+##Notes
 The input point clouds must already be aligned in a common coordinate system.
 This repository currently provides offline file-based processing, not real-time ROS topic subscription.
 The current implementation uses a straight LiDAR centerline model.
 For robust matching, reasonable registration quality and overlap between the two modalities are recommended.
 Citation
 
-If you use this repository in your research, please cite:
+If you use this repository in your research, please cite:(waiting)
 
-@article{pang2026geometry,
-  title   = {Geometry Constrained Camera and LiDAR Fusion in Underground Confined Spaces},
-  author  = {Pang, Haonan and Yang, Hongtao and Wu, Tianfeng and Liang, Guanglei},
-  journal = {To be added},
-  year    = {2026}
-}
-License
+
+##License
 
 This project is released under the MIT License unless otherwise specified.
 
-Contact
+##Contact
 
 Hongtao Yang
 School of Mechatronics Engineering
