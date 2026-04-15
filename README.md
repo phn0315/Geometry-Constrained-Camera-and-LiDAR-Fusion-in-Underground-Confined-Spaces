@@ -2,6 +2,7 @@
 
 ROS package for geometry-constrained fusion denoising of a registered depth-camera point cloud using a registered single-line LiDAR point cloud.
 
+![Workflow](ab_image.png)
 ## Features
 - Straight centerline estimation from LiDAR points
 - Dual-source point cloud unrolling into a common parameter domain
