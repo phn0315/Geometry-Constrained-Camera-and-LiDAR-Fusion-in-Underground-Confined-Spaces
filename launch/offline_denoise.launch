@@ -1,0 +1,39 @@
+<launch>
+  <arg name="camera_pcd" default="$(find tunnel_fusion_denoise)/../sample_data/CA.pcd"/>
+  <arg name="lidar_pcd" default="$(find tunnel_fusion_denoise)/../sample_data/LD.pcd"/>
+  <arg name="output_dir" default="$(env HOME)/tunnel_fusion_results"/>
+
+  <node pkg="tunnel_fusion_denoise"
+        type="tunnel_fusion_denoise_node.py"
+        name="tunnel_fusion_denoise"
+        output="screen">
+    <param name="camera_pcd" value="$(arg camera_pcd)"/>
+    <param name="lidar_pcd" value="$(arg lidar_pcd)"/>
+    <param name="output_dir" value="$(arg output_dir)"/>
+
+    <param name="voxel_size" value="0.05"/>
+    <param name="n_dense" value="1200"/>
+    <param name="extend_ratio" value="0.0"/>
+    <param name="y_mode" value="arc"/>
+
+    <param name="k_geom" value="20"/>
+    <param name="k_cov" value="20"/>
+
+    <param name="max_s_diff" value="0.30"/>
+    <param name="max_theta_diff" value="0.35"/>
+    <param name="max_3d_dist" value="0.35"/>
+
+    <param name="lambda_res" value="1.0"/>
+    <param name="beta_curv" value="10.0"/>
+
+    <param name="n_estimators" value="160"/>
+    <param name="max_depth" value="18"/>
+    <param name="min_samples_leaf" value="3"/>
+    <param name="random_state" value="42"/>
+
+    <param name="lambda_n" value="0.85"/>
+    <param name="lambda_t" value="0.15"/>
+    <param name="entropy_quantile" value="0.85"/>
+    <param name="keep_unmatched" value="false"/>
+  </node>
+</launch>

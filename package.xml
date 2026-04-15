@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>tunnel_fusion_denoise</name>
+  <version>0.1.0</version>
+  <description>ROS package for geometry-constrained fusion denoising of depth-camera and single-line LiDAR point clouds.</description>
+
+  <maintainer email="lloid@163.com">Hongtao Yang</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>rospy</depend>
+  <depend>roslaunch</depend>
+
+  <export/>
+</package>

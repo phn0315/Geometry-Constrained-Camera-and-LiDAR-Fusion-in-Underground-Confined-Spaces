@@ -1,0 +1,25 @@
+# Default parameters for offline fusion denoising.
+voxel_size: 0.05
+n_dense: 1200
+extend_ratio: 0.0
+y_mode: arc
+
+k_geom: 20
+k_cov: 20
+
+max_s_diff: 0.30
+max_theta_diff: 0.35
+max_3d_dist: 0.35
+
+lambda_res: 1.0
+beta_curv: 10.0
+
+n_estimators: 160
+max_depth: 18
+min_samples_leaf: 3
+random_state: 42
+
+lambda_n: 0.85
+lambda_t: 0.15
+entropy_quantile: 0.85
+keep_unmatched: false
